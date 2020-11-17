@@ -1,0 +1,55 @@
+*{
+	box-sizing: border-box;
+}
+h1{
+	text-align: center;
+}
+p{
+	padding : 3px;
+}
+.container div{
+	border : 1px solid black;
+	margin-bottom: 12px;
+	background-color: grey;
+
+}
+.container > div > div{
+	float : right;
+	padding : 5px;
+	margin: 2px;
+}
+#header_chicken{
+	background-color: maroon;
+	
+}
+#header_beef{
+	background-color: orange;
+	
+}
+#header_sushi{
+	background-color: brown;
+	
+}
+
+@media (min-width: 992px){
+	.container > div{
+		width: 33%;
+		float: left;
+		margin : 1px;
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.chicken , .beef{
+		float: left;
+		width : 50%;
+		
+	}
+	.sushi{
+		float:right;
+		width : 100%;
+	}
+}
+
+/* already less than 768 px is handled by default */
